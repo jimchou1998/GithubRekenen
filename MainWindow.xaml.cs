@@ -24,5 +24,19 @@ namespace GithubRekenen
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (Double.TryParse(txtDividend.Text, out double dividend) &&
+                Double.TryParse(txtDivisor.Text, out double divisor))
+            {
+                lblResultDivision.Content =
+                    $"The quotient is {Math.Round(dividend / divisor, 5)}";
+            }
+            else
+            {
+                MessageBox.Show("Invalid numbers supplied");
+            }
+        }
     }
 }
