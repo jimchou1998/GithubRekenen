@@ -24,5 +24,18 @@ namespace GithubRekenen
         {
             InitializeComponent();
         }
+
+        private void btnPlus_Click(object sender, RoutedEventArgs e)
+        {
+            int value1 = 0;
+            int value2 = 0;
+            int result = 0;
+
+            if (int.TryParse(txtNumber1plus.Text, out value1) & int.TryParse(txtNumber2plus.Text, out value2))
+            {
+                result = value1 + value2;
+                lblResultPlus.Content = result.ToString();
+            }
+        }
     }
 }
