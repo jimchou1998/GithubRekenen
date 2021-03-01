@@ -67,5 +67,16 @@ namespace GithubRekenen
 
             lblResultMinus.Content = getal1 - getal2;
         }
+
+        private void btnBereken_Click(object sender, RoutedEventArgs e)
+        {
+            int grondtal = Convert.ToInt32(txtGrondtal.Text);
+            int huidigGetal = 1;
+            for (int i = 0; i < Convert.ToInt32(txtExponent.Text); i++)
+            {
+                huidigGetal = huidigGetal * grondtal;
+            }
+            lblResultaat.Content = huidigGetal;
+        }
     }
 }

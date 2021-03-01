@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button x:Name="btnBereken" Content="Bereken macht" HorizontalAlignment="Left" Height="46" Margin="659,353,0,0" VerticalAlignment="Top" Width="110" Click="btnBereken_Click"/>
+        <TextBox x:Name="txtGrondtal" HorizontalAlignment="Left" Height="26" Margin="613,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69"/>
+        <TextBox x:Name="txtExponent" HorizontalAlignment="Left" Height="24" Margin="638,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76"/>
+        <Label x:Name="lblResultaat" Content="Label" HorizontalAlignment="Left" Height="26" Margin="714,307,0,0" VerticalAlignment="Top" Width="65"/>
         <TextBox x:Name="txtmulti1" HorizontalAlignment="Left" Margin="10,38,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="29" />
         <TextBox x:Name="txtmulti2" HorizontalAlignment="Left" Margin="194,38,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="29" />
         <Button x:Name="btnmultiply" Content="Multiply" HorizontalAlignment="Left" Height="23" Margin="231,85,0,0" VerticalAlignment="Top" Width="83" Click="btnmultiply_Click"/>
