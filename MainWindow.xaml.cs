@@ -23,6 +23,27 @@ namespace GithubRekenen
         public MainWindow()
         {
             InitializeComponent();
+            clearMultiply();
+        }
+
+
+        private void multiply()
+        {
+            int result = Convert.ToInt32(txtmulti1.Text) * Convert.ToInt32(txtmulti2.Text);
+
+            lblMultiplyResult.Content = result;
+        }
+
+        private void clearMultiply()
+        {
+            txtmulti1.Text = string.Empty;
+            txtmulti2.Text = string.Empty;
+            lblMultiplyResult.Content = string.Empty;
+        }
+        private void btnmultiply_Click(object sender, RoutedEventArgs e)
+        {
+            clearMultiply();
+            multiply();
         }
     }
 }
