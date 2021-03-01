@@ -42,8 +42,8 @@ namespace GithubRekenen
         }
         private void btnmultiply_Click(object sender, RoutedEventArgs e)
         {
-            clearMultiply();
             multiply();
+            clearMultiply();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
