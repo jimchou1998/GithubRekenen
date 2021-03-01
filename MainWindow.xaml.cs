@@ -59,5 +59,13 @@ namespace GithubRekenen
                 MessageBox.Show("Invalid numbers supplied");
             }
         }
+
+        private void btnMinus_Click(object sender, RoutedEventArgs e)
+        {
+            int getal1 = 12;
+            int getal2 = 7;
+
+            lblResultMinus.Content = getal1 - getal2;
+        }
     }
 }
