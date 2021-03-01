@@ -17,6 +17,12 @@
         <Label x:Name="lblMultiplyResult" Content="Label" HorizontalAlignment="Left" Height="26" Margin="21,133,0,0" VerticalAlignment="Top" Width="96"/>
         <Label x:Name="lblResultMinus" Content="Label" HorizontalAlignment="Left" Margin="360,181,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnMinus" Content="Button" HorizontalAlignment="Left" Margin="360,217,0,0" VerticalAlignment="Top" Width="77" Click="btnMinus_Click"/>
+        <TextBox x:Name="txtNumber1plus" HorizontalAlignment="Left" Margin="629,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
+        <TextBox x:Name="txtNumber2plus" HorizontalAlignment="Left" Margin="712,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
+        <Label Content="+" HorizontalAlignment="Left" Margin="689,21,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnPlus" Content="Calculate" HorizontalAlignment="Left" Margin="678,52,0,0" VerticalAlignment="Top" Click="btnPlus_Click"/>
+        <Label x:Name="lblResultPlus" Content="" HorizontalAlignment="Left" Margin="678,77,0,0" VerticalAlignment="Top"/>
+
 
         <Label Name="lblResultDivision" Content="" HorizontalAlignment="Left" Margin="183,287,0,0" VerticalAlignment="Top"/>
         <Label Content="Dividend" HorizontalAlignment="Left" Margin="176,233,0,0" VerticalAlignment="Top"/>
